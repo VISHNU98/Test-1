@@ -1,3 +1,501 @@
-
-[]
-      
+[
+  {
+    "name": "WAS Node Suite",
+    "url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "WASasquatch",
+      "title": "WAS Node Suite",
+      "id": "was",
+      "reference": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "files": [
+        "https://github.com/WASasquatch/was-node-suite-comfyui"
+      ],
+      "install_type": "git-clone",
+      "description": "A node suite for ComfyUI with many new nodes, such as image processing, text processing, and more."
+    },
+    "nodes": [
+      "Image Size to Number",
+      "Image Blending Mode",
+      "Image Blending Mode",
+      "Image Blending Mode",
+      "Image Blending Mode",
+      "Image Blend by Mask",
+      "Image Blend by Mask",
+      "Number to Int",
+      "Number to Int"
+    ],
+    "apt": [],
+    "pip": [
+      "numba"
+    ],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "comfyui-art-venture",
+    "url": "https://github.com/sipherxyz/comfyui-art-venture",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "sipherxyz",
+      "title": "comfyui-art-venture",
+      "id": "artventure",
+      "reference": "https://github.com/sipherxyz/comfyui-art-venture",
+      "files": [
+        "https://github.com/sipherxyz/comfyui-art-venture"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes: ImagesConcat, LoadImageFromUrl, AV_UploadImage"
+    },
+    "nodes": [
+      "ImageScaleToMegapixels"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_IPAdapter_plus",
+    "url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "ComfyUI_IPAdapter_plus",
+      "id": "ipadapter",
+      "reference": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+      "files": [
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI reference implementation for IPAdapter models. The code is mostly taken from the original IPAdapter repository and laksjdjf's implementation, all credit goes to them. I just made the extension closer to ComfyUI philosophy."
+    },
+    "nodes": [
+      "IPAdapterUnifiedLoader",
+      "IPAdapterAdvanced"
+    ],
+    "apt": [],
+    "pip": [
+      "insightface"
+    ],
+    "preemptions": [
+      "IPAAdapterFaceIDBatch",
+      "IPAdapter",
+      "IPAdapterAdvanced",
+      "IPAdapterBatch",
+      "IPAdapterClipVisionEnhancer",
+      "IPAdapterClipVisionEnhancerBatch",
+      "IPAdapterCombineEmbeds",
+      "IPAdapterCombineParams",
+      "IPAdapterCombineWeights",
+      "IPAdapterEmbeds",
+      "IPAdapterEmbedsBatch",
+      "IPAdapterEncoder",
+      "IPAdapterFaceID",
+      "IPAdapterFromParams",
+      "IPAdapterInsightFaceLoader",
+      "IPAdapterLoadEmbeds",
+      "IPAdapterMS",
+      "IPAdapterModelLoader",
+      "IPAdapterNoise",
+      "IPAdapterPreciseComposition",
+      "IPAdapterPreciseCompositionBatch",
+      "IPAdapterPreciseStyleTransfer",
+      "IPAdapterPreciseStyleTransferBatch",
+      "IPAdapterPromptScheduleFromWeightsStrategy",
+      "IPAdapterRegionalConditioning",
+      "IPAdapterSaveEmbeds",
+      "IPAdapterStyleComposition",
+      "IPAdapterStyleCompositionBatch",
+      "IPAdapterTiled",
+      "IPAdapterTiledBatch",
+      "IPAdapterUnifiedLoader",
+      "IPAdapterUnifiedLoaderCommunity",
+      "IPAdapterUnifiedLoaderFaceID",
+      "IPAdapterWeights",
+      "IPAdapterWeightsFromStrategy",
+      "PrepImageForClipVision"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "KJNodes for ComfyUI",
+    "url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "KJNodes for ComfyUI",
+      "id": "kjnodes",
+      "reference": "https://github.com/kijai/ComfyUI-KJNodes",
+      "files": [
+        "https://github.com/kijai/ComfyUI-KJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Various quality of life -nodes for ComfyUI, mostly just visual stuff to improve usability."
+    },
+    "nodes": [
+      "GrowMaskWithBlur",
+      "RemapMaskRange",
+      "GrowMaskWithBlur",
+      "RemapImageRange",
+      "RemapImageRange",
+      "RemapImageRange",
+      "RemapImageRange",
+      "GrowMaskWithBlur",
+      "ImageBatchMulti",
+      "RemapMaskRange",
+      "RemapImageRange",
+      "RemapImageRange"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "Various ComfyUI Nodes by Type",
+    "url": "https://github.com/jamesWalker55/comfyui-various",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "jamesWalker55",
+      "title": "Various ComfyUI Nodes by Type",
+      "id": "jameswalker-nodes",
+      "reference": "https://github.com/jamesWalker55/comfyui-various",
+      "files": [
+        "https://github.com/jamesWalker55/comfyui-various"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes: JWInteger, JWFloat, JWString, JWImageLoadRGB, JWImageResize, ..."
+    },
+    "nodes": [
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize",
+      "JWImageResize"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Essentials",
+    "url": "https://github.com/cubiq/ComfyUI_essentials",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "ComfyUI Essentials",
+      "id": "essentials",
+      "reference": "https://github.com/cubiq/ComfyUI_essentials",
+      "files": [
+        "https://github.com/cubiq/ComfyUI_essentials"
+      ],
+      "install_type": "git-clone",
+      "description": "Essential nodes that are weirdly missing from ComfyUI core. With few exceptions they are new features and not commodities. I hope this will be just a temporary repository until the nodes get included into ComfyUI."
+    },
+    "nodes": [
+      "MaskFromRGBCMYBW+"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-IC-Light",
+    "url": "https://github.com/kijai/ComfyUI-IC-Light",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "ComfyUI-IC-Light",
+      "id": "ic-light-kijai",
+      "reference": "https://github.com/kijai/ComfyUI-IC-Light",
+      "files": [
+        "https://github.com/kijai/ComfyUI-IC-Light"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI native nodes for IC-Light"
+    },
+    "nodes": [
+      "LoadAndApplyICLightUnet",
+      "ICLightConditioning"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-Image-Filters",
+    "url": "https://github.com/spacepxl/ComfyUI-Image-Filters",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "spacepxl",
+      "title": "ComfyUI-Image-Filters",
+      "id": "image-fitlers",
+      "reference": "https://github.com/spacepxl/ComfyUI-Image-Filters",
+      "files": [
+        "https://github.com/spacepxl/ComfyUI-Image-Filters"
+      ],
+      "install_type": "git-clone",
+      "description": "Image and matte filtering nodes for ComfyUI `image/filters/*`"
+    },
+    "nodes": [
+      "ColorMatchImage",
+      "ColorMatchImage",
+      "ColorMatchImage",
+      "ColorMatchImage",
+      "BatchAverageImage",
+      "BatchAverageImage",
+      "BatchAverageImage"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "comfyUI_FrequencySeparation_RGB-HSV",
+    "url": "https://github.com/risunobushi/comfyUI_FrequencySeparation_RGB-HSV",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "risunobushi",
+      "title": "comfyUI_FrequencySeparation_RGB-HSV",
+      "id": "freq-sep",
+      "reference": "https://github.com/risunobushi/comfyUI_FrequencySeparation_RGB-HSV",
+      "files": [
+        "https://github.com/risunobushi/comfyUI_FrequencySeparation_RGB-HSV"
+      ],
+      "install_type": "git-clone",
+      "description": "A collection of simple nodes for Frequency Separation / Frequency Recombine with RGB and HSV methods"
+    },
+    "nodes": [
+      "FrequencySeparationHSV",
+      "FrequencySeparation",
+      "FrequencyCombination",
+      "FrequencyCombination"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Impact Pack",
+    "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Dr.Lt.Data",
+      "title": "ComfyUI Impact Pack",
+      "id": "impact",
+      "reference": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+      "files": [
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+      ],
+      "install_type": "git-clone",
+      "description": "This extension offers various detector nodes and detailer nodes that allow you to configure a workflow that automatically enhances facial details. And provide iterative upscaler."
+    },
+    "nodes": [
+      "PreviewBridge"
+    ],
+    "apt": [],
+    "pip": [
+      "ultralytics"
+    ],
+    "preemptions": [
+      "SAMLoader"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyLiterals",
+    "url": "https://github.com/M1kep/ComfyLiterals",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "M1kep",
+      "title": "ComfyLiterals",
+      "id": "comfyliterals",
+      "reference": "https://github.com/M1kep/ComfyLiterals",
+      "files": [
+        "https://github.com/M1kep/ComfyLiterals"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes: Int, Float, String, Operation, Checkpoint"
+    },
+    "nodes": [
+      "Float",
+      "Float",
+      "Int"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "Save Image with Generation Metadata",
+    "url": "https://github.com/giriss/comfy-image-saver",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Girish Gopaul",
+      "title": "Save Image with Generation Metadata",
+      "id": "image-saver",
+      "reference": "https://github.com/giriss/comfy-image-saver",
+      "files": [
+        "https://github.com/giriss/comfy-image-saver"
+      ],
+      "install_type": "git-clone",
+      "description": "All the tools you need to save images with their generation metadata on ComfyUI. Compatible with Civitai & Prompthero geninfo auto-detection. Works with png, jpeg and webp."
+    },
+    "nodes": [
+      "Cfg Literal"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI's ControlNet Auxiliary Preprocessors",
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Fannovel16",
+      "title": "ComfyUI's ControlNet Auxiliary Preprocessors",
+      "id": "comfyui_controlnet_aux",
+      "reference": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+      "files": [
+        "https://github.com/Fannovel16/comfyui_controlnet_aux"
+      ],
+      "install_type": "git-clone",
+      "description": "Plug-and-play ComfyUI node sets for making ControlNet hint images."
+    },
+    "nodes": [
+      "DepthAnythingPreprocessor"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [
+      "AIO_Preprocessor",
+      "AnimalPosePreprocessor",
+      "AnimeFace_SemSegPreprocessor",
+      "AnimeLineArtPreprocessor",
+      "BAE-NormalMapPreprocessor",
+      "BinaryPreprocessor",
+      "CannyEdgePreprocessor",
+      "ColorPreprocessor",
+      "DSINE-NormalMapPreprocessor",
+      "DWPreprocessor",
+      "DensePosePreprocessor",
+      "DepthAnythingPreprocessor",
+      "DiffusionEdge_Preprocessor",
+      "FacialPartColoringFromPoseKps",
+      "FakeScribblePreprocessor",
+      "HEDPreprocessor",
+      "HintImageEnchance",
+      "ImageGenResolutionFromImage",
+      "ImageGenResolutionFromLatent",
+      "ImageIntensityDetector",
+      "ImageLuminanceDetector",
+      "InpaintPreprocessor",
+      "LeReS-DepthMapPreprocessor",
+      "LineArtPreprocessor",
+      "LineartStandardPreprocessor",
+      "M-LSDPreprocessor",
+      "Manga2Anime_LineArt_Preprocessor",
+      "MaskOptFlow",
+      "MediaPipe-FaceMeshPreprocessor",
+      "MeshGraphormer-DepthMapPreprocessor",
+      "MiDaS-DepthMapPreprocessor",
+      "MiDaS-NormalMapPreprocessor",
+      "OneFormer-ADE20K-SemSegPreprocessor",
+      "OneFormer-COCO-SemSegPreprocessor",
+      "OpenposePreprocessor",
+      "PiDiNetPreprocessor",
+      "PixelPerfectResolution",
+      "SAMPreprocessor",
+      "SavePoseKpsAsJsonFile",
+      "ScribblePreprocessor",
+      "Scribble_XDoG_Preprocessor",
+      "SemSegPreprocessor",
+      "ShufflePreprocessor",
+      "TEEDPreprocessor",
+      "TilePreprocessor",
+      "UniFormer-SemSegPreprocessor",
+      "Unimatch_OptFlowPreprocessor",
+      "Zoe-DepthMapPreprocessor",
+      "Zoe_DepthAnythingPreprocessor"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "segment anything",
+    "url": "https://github.com/storyicon/comfyui_segment_anything",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "storyicon",
+      "title": "segment anything",
+      "id": "sam",
+      "reference": "https://github.com/storyicon/comfyui_segment_anything",
+      "files": [
+        "https://github.com/storyicon/comfyui_segment_anything"
+      ],
+      "install_type": "git-clone",
+      "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The comfyui version of sd-webui-segment-anything."
+    },
+    "nodes": [
+      "GroundingDinoModelLoader (segment anything)",
+      "GroundingDinoSAMSegment (segment anything)",
+      "SAMModelLoader (segment anything)"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI SAM2(Segment Anything 2)",
+    "url": "https://github.com/neverbiasu/ComfyUI-SAM2",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "neverbiasu",
+      "title": "ComfyUI SAM2(Segment Anything 2)",
+      "id": "sam2",
+      "reference": "https://github.com/neverbiasu/ComfyUI-SAM2",
+      "files": [
+        "https://github.com/neverbiasu/ComfyUI-SAM2"
+      ],
+      "install_type": "git-clone",
+      "description": "This project adapts the SAM2 to incorporate functionalities from [a/comfyui_segment_anything](https://github.com/storyicon/comfyui_segment_anything). Many thanks to continue-revolution for their foundational work."
+    },
+    "nodes": [
+      "GroundingDinoModelLoader (segment anything)",
+      "GroundingDinoSAMSegment (segment anything)"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  }
+]
