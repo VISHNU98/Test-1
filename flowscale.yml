@@ -3,5 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
-normal_workflows: []
+workflows:
+  - id: reeyg6c8byl
+    name: test_1_api.json
+    file: test_group/test_1_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+normal_workflows:
+  - id: k9a2m8eq85
+    name: test_1.json
+    file: test_group/test_1.json
+    version: 0
