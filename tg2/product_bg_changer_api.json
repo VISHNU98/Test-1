@@ -1,0 +1,383 @@
+{
+    "4": {
+        "inputs": {
+            "ckpt_name": "realisticvisionmadne_v15.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple"
+    },
+    "6": {
+        "inputs": {
+            "text": "urban city scene, out of focus busy city street background, soft natural light",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode"
+    },
+    "7": {
+        "inputs": {
+            "text": "lowres, low quality, cropped, worst quality, watermark",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode"
+    },
+    "12": {
+        "inputs": {
+            "rem_mode": "RMBG-1.4",
+            "image_output": "Preview",
+            "save_prefix": "ComfyUI",
+            "torchscript_jit": false,
+            "images": [
+                "14",
+                0
+            ]
+        },
+        "class_type": "easy imageRemBg"
+    },
+    "14": {
+        "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "interpolation": "nearest",
+            "method": "stretch",
+            "condition": "always",
+            "multiple_of": 0,
+            "image": [
+                "78",
+                0
+            ]
+        },
+        "class_type": "ImageResize+"
+    },
+    "16": {
+        "inputs": {
+            "seed": 714882402599624,
+            "steps": 25,
+            "cfg": 2,
+            "sampler_name": "dpmpp_2m_sde",
+            "scheduler": "karras",
+            "denoise": 0.9,
+            "model": [
+                "58",
+                0
+            ],
+            "positive": [
+                "6",
+                0
+            ],
+            "negative": [
+                "7",
+                0
+            ],
+            "latent_image": [
+                "37",
+                0
+            ]
+        },
+        "class_type": "KSampler"
+    },
+    "17": {
+        "inputs": {
+            "samples": [
+                "16",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEDecode"
+    },
+    "23": {
+        "inputs": {
+            "weight_dtype": "default"
+        },
+        "class_type": "UNETLoader"
+    },
+    "24": {
+        "inputs": {
+            "pixels": [
+                "41",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEEncodeArgMax"
+    },
+    "37": {
+        "inputs": {
+            "pixels": [
+                "46",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEEncodeArgMax"
+    },
+    "38": {
+        "inputs": {
+            "images": [
+                "46",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "40": {
+        "inputs": {
+            "model": [
+                "4",
+                0
+            ],
+            "ic_model": [
+                "23",
+                0
+            ],
+            "c_concat": [
+                "24",
+                0
+            ]
+        },
+        "class_type": "ICLightAppply"
+    },
+    "41": {
+        "inputs": {
+            "image": [
+                "12",
+                0
+            ],
+            "alpha": [
+                "12",
+                1
+            ]
+        },
+        "class_type": "ICLightApplyMaskGrey"
+    },
+    "42": {
+        "inputs": {
+            "width": [
+                "14",
+                1
+            ],
+            "height": [
+                "14",
+                2
+            ],
+            "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage"
+    },
+    "43": {
+        "inputs": {
+            "samples": [
+                "42",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEDecode"
+    },
+    "46": {
+        "inputs": {
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "destination": [
+                "43",
+                0
+            ],
+            "source": [
+                "47",
+                0
+            ],
+            "mask": [
+                "12",
+                1
+            ]
+        },
+        "class_type": "ImageCompositeMasked"
+    },
+    "47": {
+        "inputs": {
+            "image": [
+                "12",
+                0
+            ]
+        },
+        "class_type": "SplitImageWithAlpha"
+    },
+    "51": {
+        "inputs": {
+            "mode": "add",
+            "blur_sigma": 1,
+            "blend_factor": 1,
+            "target": [
+                "17",
+                0
+            ],
+            "source": [
+                "47",
+                0
+            ]
+        },
+        "class_type": "DetailTransfer"
+    },
+    "58": {
+        "inputs": {
+            "preset": "PLUS (high strength)",
+            "lora_strength": 0.6,
+            "provider": "CPU",
+            "weight": 1,
+            "weight_faceidv2": 1,
+            "start_at": 0,
+            "end_at": 1,
+            "cache_mode": "all",
+            "use_tiled": false,
+            "model": [
+                "40",
+                0
+            ],
+            "image": [
+                "46",
+                0
+            ],
+            "attn_mask": [
+                "12",
+                1
+            ]
+        },
+        "class_type": "easy ipadapterApply"
+    },
+    "59": {
+        "inputs": {
+            "images": [
+                "58",
+                1
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "61": {
+        "inputs": {
+            "images": [
+                "17",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "62": {
+        "inputs": {
+            "images": [
+                "51",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "63": {
+        "inputs": {
+            "upscale_by": 2,
+            "seed": 339823045039111,
+            "steps": 20,
+            "cfg": 8,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.2,
+            "mode_type": "Linear",
+            "tile_width": 512,
+            "tile_height": 512,
+            "mask_blur": 8,
+            "tile_padding": 32,
+            "seam_fix_mode": "None",
+            "seam_fix_denoise": 1,
+            "seam_fix_width": 64,
+            "seam_fix_mask_blur": 8,
+            "seam_fix_padding": 16,
+            "force_uniform_tiles": true,
+            "tiled_decode": false,
+            "image": [
+                "51",
+                0
+            ],
+            "model": [
+                "4",
+                0
+            ],
+            "positive": [
+                "64",
+                0
+            ],
+            "negative": [
+                "65",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ],
+            "upscale_model": [
+                "66",
+                0
+            ]
+        },
+        "class_type": "UltimateSDUpscale"
+    },
+    "64": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode"
+    },
+    "65": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode"
+    },
+    "66": {
+        "inputs": {
+            "model_name": "4x_NMKD-Siax_200k.pth"
+        },
+        "class_type": "UpscaleModelLoader"
+    },
+    "67": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "63",
+                0
+            ]
+        },
+        "class_type": "SaveImage"
+    },
+    "78": {
+        "inputs": {
+            "image": "Ultraboost_5X_Shoes_Black_JI1334_HM1.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage"
+    }
+}
