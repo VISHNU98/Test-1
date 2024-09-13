@@ -519,5 +519,80 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Easy Use",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "yolain",
+      "title": "ComfyUI Easy Use",
+      "reference": "https://github.com/yolain/ComfyUI-Easy-Use",
+      "files": [
+        "https://github.com/yolain/ComfyUI-Easy-Use"
+      ],
+      "install_type": "git-clone",
+      "description": "To enhance the usability of ComfyUI, optimizations and integrations have been implemented for several commonly used nodes."
+    },
+    "nodes": [
+      "easy imageRemBg",
+      "easy ipadapterApply"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-IC-Light-Native",
+    "url": "https://github.com/huchenlei/ComfyUI-IC-Light-Native",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "huchenlei",
+      "title": "ComfyUI-IC-Light-Native",
+      "id": "ic-light-native",
+      "reference": "https://github.com/huchenlei/ComfyUI-IC-Light-Native",
+      "files": [
+        "https://github.com/huchenlei/ComfyUI-IC-Light-Native"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI native implementation of [a/IC-Light](https://github.com/lllyasviel/IC-Light)."
+    },
+    "nodes": [
+      "VAEEncodeArgMax",
+      "ICLightApplyMaskGrey",
+      "VAEEncodeArgMax",
+      "ICLightAppply"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "UltimateSDUpscale",
+    "url": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "ssitu",
+      "title": "UltimateSDUpscale",
+      "id": "usdu",
+      "reference": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+      "files": [
+        "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI nodes for the Ultimate Stable Diffusion Upscale script by Coyote-A."
+    },
+    "nodes": [
+      "UltimateSDUpscale"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
