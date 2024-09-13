@@ -17,3 +17,7 @@ normal_workflows:
     name: test_1.json
     file: test_group/test_1.json
     version: 1
+  - id: nrojw7yewph
+    name: product_bg_changer.json
+    file: tg2/product_bg_changer.json
+    version: 0
