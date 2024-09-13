@@ -12,6 +12,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: skcas8nf80h
+    name: product_bg_changer_api.json
+    file: tg2/product_bg_changer_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 1kd6ez1bb9h
     name: test_1.json
@@ -20,4 +28,4 @@ normal_workflows:
   - id: nrojw7yewph
     name: product_bg_changer.json
     file: tg2/product_bg_changer.json
-    version: 0
+    version: 1
