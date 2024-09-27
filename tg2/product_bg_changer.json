@@ -904,37 +904,6 @@
             "bgcolor": "#355"
         },
         {
-            "id": 67,
-            "type": "SaveImage",
-            "pos": [
-                -30,
-                -550
-            ],
-            "size": {
-                "0": 780,
-                "1": 820
-            },
-            "flags": {},
-            "order": 27,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 122
-                }
-            ],
-            "title": "Upscaled Final",
-            "properties": {
-                "Node name for S&R": "SaveImage"
-            },
-            "widgets_values": [
-                "ComfyUI"
-            ],
-            "color": "#323",
-            "bgcolor": "#535"
-        },
-        {
             "id": 16,
             "type": "KSampler",
             "pos": [
@@ -1082,10 +1051,10 @@
                 -370,
                 -460
             ],
-            "size": {
-                "0": 315,
-                "1": 614
-            },
+            "size": [
+                315,
+                614
+            ],
             "flags": {},
             "order": 26,
             "mode": 0,
@@ -1329,6 +1298,37 @@
             ],
             "color": "#233",
             "bgcolor": "#355"
+        },
+        {
+            "id": 67,
+            "type": "SaveImage",
+            "pos": [
+                -28,
+                -478
+            ],
+            "size": {
+                "0": 780,
+                "1": 820
+            },
+            "flags": {},
+            "order": 27,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 122
+                }
+            ],
+            "title": "Upscaled Final",
+            "properties": {
+                "Node name for S&R": "SaveImage"
+            },
+            "widgets_values": [
+                "ComfyUI"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
         }
     ],
     "links": [
@@ -1742,10 +1742,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6115909044841543,
+            "scale": 1.4420993610649993,
             "offset": [
-                1583.8846537980512,
-                692.3161766224423
+                800.6869004407635,
+                555.5203675962928
             ]
         },
         "info": {
