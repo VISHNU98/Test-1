@@ -1,7 +1,7 @@
 {
     "4": {
         "inputs": {
-            "ckpt_name": "realisticvisionmadne_v15.safetensors"
+            "ckpt_name": "realisticVisionV60B1_v51HyperVAE.safetensors"
         },
         "class_type": "CheckpointLoaderSimple"
     },
@@ -328,7 +328,7 @@
     },
     "78": {
         "inputs": {
-            "image": "Ultraboost_5X_Shoes_Black_JI1334_HM1.png",
+            "image": "Ultraboost_5X_Shoes_Black_JI1334_HM1.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage"
