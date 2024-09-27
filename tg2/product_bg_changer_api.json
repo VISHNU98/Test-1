@@ -95,7 +95,7 @@
     },
     "23": {
         "inputs": {
-            "unet_name": null,
+            "unet_name": "iclight_sd15_fc_unet_ldm.safetensors",
             "weight_dtype": "default"
         },
         "class_type": "UNETLoader"
