@@ -95,6 +95,7 @@
     },
     "23": {
         "inputs": {
+            "unet_name": null,
             "weight_dtype": "default"
         },
         "class_type": "UNETLoader"
@@ -291,25 +292,6 @@
     },
     "63": {
         "inputs": {
-            "upscale_by": 2,
-            "seed": 339823045039111,
-            "steps": 20,
-            "cfg": 8,
-            "sampler_name": "euler",
-            "scheduler": "normal",
-            "denoise": 0.2,
-            "mode_type": "Linear",
-            "tile_width": 512,
-            "tile_height": 512,
-            "mask_blur": 8,
-            "tile_padding": 32,
-            "seam_fix_mode": "None",
-            "seam_fix_denoise": 1,
-            "seam_fix_width": 64,
-            "seam_fix_mask_blur": 8,
-            "seam_fix_padding": 16,
-            "force_uniform_tiles": true,
-            "tiled_decode": false,
             "image": [
                 "51",
                 0
@@ -334,8 +316,7 @@
                 "66",
                 0
             ]
-        },
-        "class_type": "UltimateSDUpscale"
+        }
     },
     "64": {
         "inputs": {
