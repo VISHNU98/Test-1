@@ -290,34 +290,6 @@
         },
         "class_type": "PreviewImage"
     },
-    "63": {
-        "inputs": {
-            "image": [
-                "51",
-                0
-            ],
-            "model": [
-                "4",
-                0
-            ],
-            "positive": [
-                "64",
-                0
-            ],
-            "negative": [
-                "65",
-                0
-            ],
-            "vae": [
-                "4",
-                2
-            ],
-            "upscale_model": [
-                "66",
-                0
-            ]
-        }
-    },
     "64": {
         "inputs": {
             "text": "",
@@ -348,7 +320,7 @@
         "inputs": {
             "filename_prefix": "ComfyUI",
             "images": [
-                "63",
+                "51",
                 0
             ]
         },
