@@ -15,7 +15,7 @@ workflows:
   - id: skcas8nf80h
     name: product_bg_changer_api.json
     file: tg2/product_bg_changer_api.json
-    version: 2
+    version: 3
     description: ''
     inputs:
       - path: 67.inputs.filename_prefix
@@ -44,4 +44,4 @@ normal_workflows:
   - id: nrojw7yewph
     name: product_bg_changer.json
     file: tg2/product_bg_changer.json
-    version: 2
+    version: 3
