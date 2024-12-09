@@ -12,43 +12,8 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: skcas8nf80h
-    name: product_bg_changer_api.json
-    file: tg2/product_bg_changer_api.json
-    version: 6
-    description: ''
-    inputs:
-      - path: 67.inputs.filename_prefix
-        label: filename_prefix
-        parameter_name: filename_prefix_77455
-        type: string
-        demo_type: text
-        category: output
-        randomize: true
-      - path: 6.inputs.text
-        label: Positive Prompt
-        parameter_name: text_71318
-        type: string
-        demo_type: text
-        category: input
-        randomize: false
-      - path: 64.inputs.text
-        label: Negative Prompt
-        parameter_name: text_90417
-        type: string
-        demo_type: text
-        category: input
-        randomize: false
-    outputs:
-      - label: Ouptput Image
-        demo_type: image
-    skip_preprocess: true
 normal_workflows:
   - id: 1kd6ez1bb9h
     name: test_1.json
     file: test_group/test_1.json
     version: 1
-  - id: nrojw7yewph
-    name: product_bg_changer.json
-    file: tg2/product_bg_changer.json
-    version: 6
