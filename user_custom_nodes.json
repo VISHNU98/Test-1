@@ -591,5 +591,160 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Layer Style",
+    "url": "https://github.com/chflame163/ComfyUI_LayerStyle",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "chflame163",
+      "title": "ComfyUI Layer Style",
+      "id": "layerstyle",
+      "reference": "https://github.com/chflame163/ComfyUI_LayerStyle",
+      "files": [
+        "https://github.com/chflame163/ComfyUI_LayerStyle"
+      ],
+      "install_type": "git-clone",
+      "description": "A set of nodes for ComfyUI it generate image like Adobe Photoshop's Layer Style. the Drop Shadow is first completed node, and follow-up work is in progress."
+    },
+    "nodes": [
+      "LayerMask: MaskGrow",
+      "LayerUtility: ImageBlendAdvance",
+      "LayerColor: ColorAdapter",
+      "LayerUtility: ColorPicker",
+      "LayerUtility: ColorImage",
+      "LayerUtility: ImageBlendAdvance V2",
+      "LayerMask: MaskPreview"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-SUPIR",
+    "url": "https://github.com/kijai/ComfyUI-SUPIR",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "ComfyUI-SUPIR",
+      "id": "supir",
+      "reference": "https://github.com/kijai/ComfyUI-SUPIR",
+      "files": [
+        "https://github.com/kijai/ComfyUI-SUPIR"
+      ],
+      "install_type": "git-clone",
+      "description": "Wrapper nodes to use SUPIR upscaling process in ComfyUI"
+    },
+    "nodes": [
+      "SUPIR_first_stage",
+      "SUPIR_conditioner",
+      "SUPIR_encode",
+      "SUPIR_sample",
+      "SUPIR_decode",
+      "SUPIR_model_loader_v2"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_Mira",
+    "url": "https://github.com/mirabarukaso/ComfyUI_Mira",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "mirabarukaso",
+      "title": "ComfyUI_Mira",
+      "id": "mira",
+      "reference": "https://github.com/mirabarukaso/ComfyUI_Mira",
+      "files": [
+        "https://github.com/mirabarukaso/ComfyUI_Mira"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Integer Multiplier, Float Multiplier, Convert Numeral to String, Create Canvas Advanced, Create Canvas, Create PNG Mask, Color Mask to HEX String, Color Mask to INT RGB, Color Masks to List"
+    },
+    "nodes": [
+      "TextCombinerTwo"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_LayerStyle_Advance",
+    "url": "https://github.com/chflame163/ComfyUI_LayerStyle_Advance",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "chflame163",
+      "title": "ComfyUI_LayerStyle_Advance",
+      "id": "comfyui_layerstyle_advance",
+      "reference": "https://github.com/chflame163/ComfyUI_LayerStyle_Advance",
+      "files": [
+        "https://github.com/chflame163/ComfyUI_LayerStyle_Advance"
+      ],
+      "install_type": "git-clone",
+      "description": "The nodes detached from ComfyUI Layer Style are mainly those with complex requirements for dependency packages."
+    },
+    "nodes": [
+      "LayerMask: SegmentAnythingUltra V2",
+      "LayerMask: SegmentAnythingUltra V2",
+      "LayerUtility: LaMa"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-WJNodes",
+    "url": "https://github.com/807502278/ComfyUI-WJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "807502278",
+      "title": "ComfyUI-WJNodes",
+      "reference": "https://github.com/807502278/ComfyUI-WJNodes",
+      "files": [
+        "https://github.com/807502278/ComfyUI-WJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Ready to use upon download. No need to install dependencies for the time being.\nIf there are new functions or suggestions, please provide feedback.\nAttention! The delfile node is not recommended for use on servers. I am not responsible for any losses incurred."
+    },
+    "nodes": [
+      "PrimitiveNode"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "hd-nodes-comfyui",
+    "url": "https://github.com/xiaoxiaodesha/hd_node",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "xiaoxiaodesha",
+      "title": "hd-nodes-comfyui",
+      "reference": "https://github.com/xiaoxiaodesha/hd_node",
+      "files": [
+        "https://github.com/xiaoxiaodesha/hd_node"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Combine HDMasks, Cover HDMasks, HD FaceIndex, HD SmoothEdge, HD GetMaskArea, HD Image Levels, HD Ultimate SD Upscale"
+    },
+    "nodes": [
+      "HD UltimateSDUpscale"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
