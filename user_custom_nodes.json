@@ -711,5 +711,17 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+    "name": "ComfyUI-VideoHelperSuite",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "sha": "",
+    "cached": "False"
   }
 ]
